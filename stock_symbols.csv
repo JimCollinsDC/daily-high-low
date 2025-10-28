@@ -1,11 +1,5 @@
 symbol,name
-AAPL,Apple Inc.
-MSFT,Microsoft Corporation
-GOOGL,Alphabet Inc.
-AMZN,Amazon.com Inc.
+DIA,Dow Jones Industrial Index.
+AAPL,Amazon.com Inc.
 TSLA,Tesla Inc.
-NVDA,NVIDIA Corporation
-META,Meta Platforms Inc.
-NFLX,Netflix Inc.
-JPM,JPMorgan Chase & Co.
-JNJ,Johnson & Johnson
+ARM,Arm Holdings plc

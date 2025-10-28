@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "ABBV",
+    "total_return": 0.35629889790263497,
+    "win_rate": 0.5476190476190477,
+    "total_trades": 42,
+    "profitable_trades": 23,
+    "avg_return_per_trade": 0.00772900606040932,
+    "max_drawdown": 0.12599076569668707,
+    "sharpe_ratio": 0.2551895354216883,
+    "volatility": 0.030287315847954004,
+    "analysis_days": 182
+  },
+  {
+    "symbol": "MMM",
+    "total_return": 0.0523588033494032,
+    "win_rate": 0.3673469387755102,
+    "total_trades": 49,
+    "profitable_trades": 18,
+    "avg_return_per_trade": 0.0012698752203574122,
+    "max_drawdown": 0.0904114085653807,
+    "sharpe_ratio": 0.05894843626846565,
+    "volatility": 0.021542135818057813,
+    "analysis_days": 182
+  },
+  {
+    "symbol": "ABT",
+    "total_return": -0.08056160330546226,
+    "win_rate": 0.4166666666666667,
+    "total_trades": 48,
+    "profitable_trades": 20,
+    "avg_return_per_trade": -0.0015806100891481466,
+    "max_drawdown": 0.1308828121595837,
+    "sharpe_ratio": -0.08724373624886197,
+    "volatility": 0.018117175594583323,
+    "analysis_days": 182
+  },
+  {
+    "symbol": "ASO",
+    "total_return": -0.20308074055793496,
+    "win_rate": 0.4418604651162791,
+    "total_trades": 43,
+    "profitable_trades": 19,
+    "avg_return_per_trade": -0.004424826727408068,
+    "max_drawdown": 0.26405385206294646,
+    "sharpe_ratio": -0.10978148818002449,
+    "volatility": 0.04030576375638161,
+    "analysis_days": 182
+  },
+  {
+    "symbol": "ANF",
+    "total_return": -0.22635670337951042,
+    "win_rate": 0.28888888888888886,
+    "total_trades": 45,
+    "profitable_trades": 13,
+    "avg_return_per_trade": -0.00481386421226635,
+    "max_drawdown": 0.3336980648943378,
+    "sharpe_ratio": -0.11602200013751239,
+    "volatility": 0.041490960391657,
+    "analysis_days": 182
+  }
+]

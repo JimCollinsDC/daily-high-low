@@ -334,3 +334,62 @@ The daily high low stock analysis tool successfully meets all 15 requirements sp
 **Repository URL:** https://github.com/JimCollinsDC/daily-high-low
 
 The project is now a complete, professional-grade stock analysis tool ready for production use and public demonstration!
+
+---
+
+## Session 8: Extreme Event Filtering Enhancement
+
+**Date:** October 10, 2025  
+**Context:** User requested filtering capability to exclude stocks with extreme price movements from profitability analysis.
+
+### Problem Statement
+The profitability analyzer needed enhancement to filter out extreme events (25%+ daily price changes) that:
+- Are unlikely to repeat (earnings surprises, merger announcements)
+- Skew backtesting results unrealistically
+- Reduce strategy assessment reliability
+
+### Solution Implementation
+
+#### 1. Extreme Event Detection
+- **`has_extreme_price_movement()`**: Detects daily movements exceeding threshold
+- **`filter_extreme_events()`**: Removes extreme days plus 2-day buffer zones
+- **Configurable threshold**: Default 25%, user customizable
+
+#### 2. Enhanced Analysis Pipeline
+- Updated `simulate_trading_strategy()` with optional filtering
+- Command-line interface with argparse:
+  ```bash
+  python profitability_analyzer.py                    # Default filtering
+  python profitability_analyzer.py --threshold 0.15   # Custom threshold
+  python profitability_analyzer.py --no-filter        # No filtering
+  ```
+
+#### 3. Improved Reporting
+- Shows filtered day counts and period adjustments
+- Maintains all existing performance metrics
+- Better user feedback during analysis
+
+#### 4. Technical Implementation
+- **Buffer zones**: Excludes 2 days before/after extreme events
+- **Data integrity**: Minimum 30 days required after filtering
+- **Zero-impact fallback**: Returns baseline results if insufficient data
+
+### Files Modified
+1. **`profitability_analyzer.py`**: Added filtering functions and CLI arguments
+2. **`FILTERING_GUIDE.md`**: Comprehensive documentation (new file)
+3. **`chat.md`**: Updated development history
+
+### Quality Improvements
+- Fixed file corruption issues with null bytes
+- Maintained flake8 compliance throughout
+- Enhanced error handling and user feedback
+- Comprehensive inline documentation
+
+### Impact
+This enhancement significantly improves the practical value of the profitability analysis by:
+- Focusing on repeatable market patterns
+- Reducing noise from one-time events
+- Providing more realistic trading strategy assessment
+- Maintaining flexibility for different volatility scenarios
+
+The tool now offers production-ready backtesting with sophisticated outlier filtering while preserving user control over analysis parameters.
